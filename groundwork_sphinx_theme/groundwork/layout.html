@@ -1,0 +1,53 @@
+{%- extends "basic/layout.html" %}
+{%- block extrahead %}
+    {{ super() }}
+        {% if theme_touch_icon %}
+    <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
+        {% endif %}
+    <link media="only screen and (max-device-width: 480px)" href="{{pathto('_static/small_groundwork.css', 1) }}" type= "text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <!-- Place this tag in your head or just before your close body tag. -->
+{% endblock %}
+
+{%- block sidebarsearch %}
+    {{ super() }}
+{#    {% if theme_contribute %}#}
+{#    <div class="contribute">#}
+{#        <h3>Contribute</h3>#}
+{#        <a class="github-button" href="https://github.com/{{ theme_github_fork }}/fork"#}
+{#           data-icon="octicon-repo-forked"#}
+{#           data-style="mega"#}
+{#           aria-label="Fork {{ theme_github_fork }} on GitHub">Fork</a>#}
+{#        <a class="github-button" href="https://github.com/{{ theme_github_fork }}"#}
+{#           data-icon="octicon-star"#}
+{#           data-style="mega"#}
+{#           data-count-href="/{{ theme_github_fork }}/stargazers"#}
+{#           data-count-api="/repos/{{ theme_github_fork }}#stargazers_count"#}
+{#           data-count-aria-label="# stargazers on GitHub"#}
+{#           aria-label="Star {{ theme_github_fork }} on GitHub">Star</a>#}
+{#        <br>#}
+{#        <a class="github-button" href="https://github.com/{{ theme_github_user }}"#}
+{#           data-style="mega"#}
+{#           aria-label="Follow @{{ theme_github_user }} on GitHub">Follow @{{ theme_github_user }}</a>#}
+{#    </div>#}
+{#    {% endif %}#}
+    {%- include "contribute.html" %}
+{% endblock %}
+
+{% block relbar2 %}
+ {% if theme_github_fork %}
+        <div class="github_fork">
+            <a href="http://github.com/{{ theme_github_fork }}">
+                <img style="position: fixed; top: 0; right: 0; border: 0;"
+                     src="https://s3.amazonaws.com/github/ribbons/forkme_right_{{ theme_github_ribbon_color }}.png"
+                     alt="Fork me on GitHub">
+            </a>
+        </div>
+    {% endif %}
+
+{% endblock %}
+{%- block footer %}
+    <div class="footer">
+      &copy; Copyright {{ copyright }}.
+    </div>
+{%- endblock %}
