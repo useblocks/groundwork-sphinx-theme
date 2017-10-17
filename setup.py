@@ -3,6 +3,7 @@ groundwork-sphinx-theme
 =======================
 """
 from setuptools import setup, find_packages
+from io import open
 import re
 import os
 
