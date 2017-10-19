@@ -112,7 +112,7 @@ div.sphinxsidebar {
 }
 
 div.sphinxsidebarwrapper {
-    padding: 18px 10px;
+    padding: 18px 0 18px 10px;
 }
 
 div.sphinxsidebarwrapper p.logo {
@@ -126,11 +126,18 @@ div.sphinxsidebar h4 {
     /*font-family: 'Garamond', 'Georgia', serif;*/
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #ddd;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
-    margin: 0 0 5px 0;
     padding: 0;
     border-bottom: 1px solid #fff;
+
+    background-color: #444;
+    border-radius: 5px 0 0 5px;
+    padding-left: 5px;
+    border: 1px solid #444;
+    margin-top: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    margin-left: -10px;
 }
 
 div.sphinxsidebar h4 {
