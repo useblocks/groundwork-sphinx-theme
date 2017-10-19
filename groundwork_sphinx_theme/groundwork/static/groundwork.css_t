@@ -138,6 +138,8 @@ div.sphinxsidebar h4 {
     margin-top: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     margin-left: -10px;
+    /* Needed, if siebar is not sticky. Otherwise shadows moves over body element*/
+    clip-path: inset(-10px -0px -10px -10px);
 }
 
 div.sphinxsidebar h4 {
