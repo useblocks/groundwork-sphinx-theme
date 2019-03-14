@@ -253,7 +253,7 @@ span.needs-title {
     font-size: 1.3em;
 }
 
-div.needs_meta div.header {
+div.needs_meta div.headline {
     margin-bottom: 5px;
     border-bottom: 1px solid #555;
 }
@@ -262,27 +262,27 @@ div.needs_meta.line-block{
 }
 
 /* Need headline color design*/
-div.needs_meta div.header {
+div.needs_meta div.headline {
     margin: -5px -10px 5px -10px;
     border-bottom: 1px solid #555;
     border-radius: 3px 3px 0 0;
     padding: 5px 10px 0px 10px;
 }
 
-div.story div.header {
-    background-color: #0016ff33;;
+div.story div.headline {
+    background-color: #39024e80;
 }
 
-div.spec div.header {
-    background-color: #00beff33;;
+div.spec div.headline {
+    background-color: #00beff33;
 }
 
-div.impl div.header {
-    background-color: #ff000a33;;
+div.impl div.headline {
+    background-color: #ff000a33;
 }
 
-div.test div.header {
-    background-color: #2ed15233;;
+div.test div.headline {
+    background-color: #2ed15233;
 }
 /* -- body styles ----------------------------------------------------------- */
 
