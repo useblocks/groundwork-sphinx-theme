@@ -1,2 +1,4 @@
 include LICENSE
-graft groundwork_sphinx_theme/groundwork/
+include groundwork_sphinx_theme/theme.conf
+include groundwork_sphinx_theme/static/*
+include groundwork_sphinx_theme/templates/*
